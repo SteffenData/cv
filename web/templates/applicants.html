@@ -1,0 +1,30 @@
+
+
+<div class="container ">
+    <div class="row">
+    <div class="col-xs-1 col-sm-1 col-md-2 col-lg-2"></div>
+    <div class="col-xs-10 col-sm-10 col-md-8 col-lg-8">
+        <ul class="listview" >
+            <ul class="list-group"  ng-repeat="da in data" >
+                    <a ui-sref="applicant({id : da.id})">
+                <div class="list-group-item list-group-item-info colomsize ">
+                    <div class="col-xs-4 col-sm-6 col-md-6 col-lg-6 imgstyle ">
+                        <img src="image/download.png " class="img-thumbnail"/>
+                    </div>
+                    <div class="hidetext col-xs-8 col-sm-6 col-md-6 col-lg-6">
+                        <span ng-bind="da.firstName"></span>
+                        <span ng-bind="da.lastName"></span>
+                        <p><span ng-bind="da.age"></span></p>
+
+                    </div>
+                </div>
+                    </a>
+            </ul>
+        </ul>
+    </div>
+        <div class="col-xs-1 col-sm-1 col-md-2 col-lg-2"></div>
+    </div>
+</div>
+
+
+

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+    </head>
+    <body>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7 col-lg-7">
+                    <div class="well well-sm">
+                        <form action="" name="contactform">
+                            <div class="row">
+                                <div class="col-md-6 col-lg-6">
+                                    <div class="form-group" ng-class="{'has-error':contactform.name.$invalid && contactform.$submitted}">
+                                        <label for="name">
+                                            Name *</label>
+                                        <input type="text" class="form-control" id="name" name="name" placeholder="Enter name" required="required" ng-model="mail.name"/>
+                                    </div>
+                                    <div class="form-group" ng-class="{'has-error' :contactform.email.$invalid && contactform.$submitted}">
+                                        <label for="email">
+                                            Email Address *</label>
+                                        <div class="input-group">
+                                            <span class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span>
+                                            </span>
+                                            <input type="email" class="form-control" name="email" id="email" placeholder="Enter email" required="required" ng-model="mail.email"/></div>
+                                    </div>
+                                    <div class="form-group" ng-class="{'has-error': contactform.subject.$invalid && contactform.$submitted}">
+                                        <label for="subject">
+                                            Subject *</label>
+                                        <select name="subject" class="form-control" ng-model="mail.subject" required="required">
+                                            <option value="" selected>Select subject</option>
+                                            <option value="Interview">Interview</option>
+                                            <option value="message">Message</option>
+                                            <option value="Want to know more">Want to know more</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-lg-6">
+                                    <div class="form-group" ng-class="{'has-error': contactform.message.$invalid && contactform.$submitted}">
+                                        <label for="name">
+                                            Message *</label>
+                                        <textarea name="message" id="message" ng-model="mail.body" class="form-control" rows="9" cols="25" required="required"
+                                                  placeholder="Message"></textarea>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-lg-6">
+                                    <div class="alert-success" uib-alert ng-repeat="alert in alerts"
+                                         close="closeAlert($index)" dismiss-on-timeout="5000">{{alert}}</div>
+                                </div>
+                                <div class="col-md-6 col-lg-6 text-right">
+                                    <button type="button" class="btn btn-sm btn-primary" style="outline:none;" ng-click="sendmail(mail)" id="btnContactUs" ladda="formsending" data-style="expand-left">
+                                        Send Message
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-md-2 col-lg-2">
+                    <form>
+                        <legend><span class="glyphicon glyphicon-globe"></span> My Cv</legend>
+                        <address>
+                            <strong>Jobsøger</strong><br>
+                            Kastrupvej 98 b 1 tv<br>
+                            Denmark, 2300<br>
+                            <abbr title="Phone">
+                                P:</abbr>
+                            31315826
+                        </address>
+                        <address>
+                            <strong>Steffen Juhl Madsen</strong><br>
+                            <a href="mailto:juhlmadsen1982@gmail.com">juhlmadsen1982@gmail.com</a>
+                        </address>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>

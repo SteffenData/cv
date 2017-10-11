@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>mit resume</title>
+    </head>
+    <body>
+
+        <div class="row">
+            <div class="row col-md-9 col-lg-9">
+                <div class="col-md-8 col-lg-8">
+                    <ol class="listview">
+                        <ul class="list-group colomsize"  ng-repeat="re in resume.experience| orderBy:'-ageFrom':reverse | orderBy:'experienceCode':reverse" >
+                            <div class="list-group-item list-group-item-info" >
+                                <div class="experiencestyle col-md-12 col-lg-12">
+                                    <div>
+                                        From <span ng-bind="re.ageFrom"></span> to <span ng-bind="re.ageTo"></span> <b><span ng-bind="re.name"></span></b>
+                                    </div>
+                                   
+                                </div>
+                                <div>
+                                    <div class="descriptionstyle" > 
+                                        <p class="descriptiontext" ><div ng-repeat="lines in re.description" ng-bind="lines.description"></div></p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="skillstyle" ng-hide="re.skills == null"><b><span>Skills</span></b></div>
+                                    <ul class="list-group colomsizeskills"  ng-repeat="skill in re.skills">
+                                        <a ui-sref=".skill({rating : skill.skillName,expname : re.name})">      <li class="list-group-item listelement">
+                                                <span ng-bind="skill.skillName"></span>
+                                            </li></a>
+                                    </ul>
+                                </div>
+                            </div>
+                        </ul>
+                    </ol>
+                </div>
+                <div class="col-md-4 col-lg-4">
+
+                    <div ui-view></div>
+
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

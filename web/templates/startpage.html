@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+    </head>
+    <body>
+        <div class="col-md-6">
+            <div>
+                <img class="flagstyle" ng-click="change(true)" src="image/denmark-flag-waving-animated-gif-8.gif"  />
+              
+               
+                <img class="flagstyle" ng-click="change(false)" src="image/uk-union-jack-flag-waving-animated-gif-21.gif"/>
+            </div>
+            <div>
+
+                <h1>Velkommen</h1>
+                <div ng-repeat="line in data">
+                    <span ng-bind="line.line"> </span>
+                </div>
+       
+
+            </div>
+
+        </div>
+        <div class="col-md-3">
+
+        </div>
+    </body>
+</html>

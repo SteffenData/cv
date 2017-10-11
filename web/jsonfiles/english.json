@@ -1,0 +1,11 @@
+{
+    "startpage": {"lines":[
+            {"line" : "I have created my own online CV"},
+            {"line" : "I have used html,Css,ladda, javascript,angularJS with ui-routing and bootstrap"},
+            {"line" :"as backenden I have used Java, JPA, MySql database"},
+            {"line" : "the data i recieve is in Jsonformat"},
+            {"line" : "The application is deployed on openshift"},
+            {"line" : "I have created an integration to gmail, please fill in my form, and send a mail"},
+            {"line" : "This application can't be used on phones yet"}
+    ]}
+}

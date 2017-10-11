@@ -1,0 +1,11 @@
+{
+    "startpage": {"lines":[
+            {"line" : "Jeg har udarbejdet en lille side med mit CV og en beskrivelse af mig"},
+            {"line" : "Jeg har blandt andet brugt HTML,Css,ladda, Javascript, angularJS, (ui-routing) samt bootstrap"},
+            {"line" :"I backenden har jeg brugt Java, JPA, MySql database"},
+            {"line" : "den data som bliver sendt fra mit api er i Jsonformat"},
+            {"line" : "Applicationerne er deployed på openshift"},
+            {"line" : "Det er nu muligt at sende mails til mig."},
+            {"line" : "mangler at tilpasse viewed til forskellige skærmstørelser"}
+    ]}
+}

@@ -1,0 +1,93 @@
+/* app css stylesheet */
+
+.listview {
+    max-height:495px;
+    overflow-y:scroll;
+}
+.colomsize{
+    width: auto;
+    height: auto;
+}
+
+.tablecss{
+    width: auto;
+    height: auto;
+
+}
+.colomsizeskills{
+    width: auto;
+    width: auto;
+    display:inline-block;
+    horizontal-align:top;
+    padding: 1px;
+    margin:  1px;
+    border: 1px;
+
+}
+.tdlinkfull{
+    width:100%;
+    height: 100%;
+    display:block;
+
+}
+.imgstyle{
+    text-align: center;
+    max-height: 85px;
+    max-width: 85px;
+}
+img.flagstyle{
+width: 75px;
+height: auto;
+   
+}
+
+.position{
+    top: 25%;
+}
+.hidetext{
+    white-space: nowrap;
+    overflow: hidden;
+}
+.jumbotron {
+    background: #358CCE;
+    color: background;
+    border-radius: 0px;
+}
+.jumbotron-sm { padding-top: 24px;
+                padding-bottom: 24px; }
+.jumbotron small {
+    color: #FFF;
+}
+.h1 small {
+    font-size: 24px;
+}
+.profileid{
+    margin:0px auto;
+
+}
+.movetext{
+    margin-top: 29px;
+}
+.imageprofile{
+
+    max-height:250px;
+    padding-top: 5px;
+}
+.skilldescription{
+    padding-top: 10px;   
+}
+.skillstyle{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.descriptionstyle{
+    padding-top: 30px;
+    padding-bottom: 5px;
+}
+.experiencestyle{
+    position: relative;
+    left: -15px;
+}
+.descriptiontext{
+ 
+}

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<div>
+    <div>
+    </div>
+    <div>
+        <b><span ng-bind="skill.skillName"></span></b>
+        <br><br>
+        <div ng-if="skill.rating"><span uib-rating ng-model="skill.rating" max="10" style="color: dodgerblue" read-only="true" aria-labelledby="custom-icons-1"></span></div>
+    </div>
+    <div class="skilldescription">
+        <span ng-bind="skill.description"></span>
+    </div>
+
+</div>

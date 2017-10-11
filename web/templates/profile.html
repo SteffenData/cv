@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div class="container">
+   <div class="row">
+
+       <div class="col-md-9 col-lg-9">
+
+       <div class="col-md-6 col-lg-6 profileid">
+            <div class-col-md-9>
+                <div class="col-md-6 col-lg-6">
+                    <p>Name: <span ng-bind="profile.firstName"> </span> <span ng-bind="profile.lastName"></span></p>
+                </div>
+                <div class="col-md-6 col-lg-6">
+                    <p>Age: <span ng-bind="profile.age"></span></span></p>
+                </div>
+            </div>
+           <div class="container  col-md-9 col-lg-9">         
+               <img src="image/SteffenJuhlMadsen.png" class="imageprofile img-responsive"/>
+           </div>
+       </div>
+           
+       <div class="col-md-6 col-lg-6 movetext">
+           <div ng-repeat="profiletext in profile.desriptionslines">
+               <span ng-bind="profiletext.descriptionline"></span>
+           </div>
+
+       </div>
+       </div>
+       </div>
+</div>
+</body>
+</html>

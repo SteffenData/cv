@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" ng-app="myApp"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>My CV App</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-rating/1.4.0/bootstrap-rating.css">
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Ladda/1.0.0/ladda-themeless.min.css">
+        <link rel="stylesheet" href="app.css">
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.2/angular.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.4.2/angular-ui-router.min.js"></script>    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.5.0/ui-bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.5.0/ui-bootstrap-tpls.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Ladda/1.0.0/spin.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Ladda/1.0.0/ladda.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ladda/0.4.3/angular-ladda.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-cookie/4.1.0/angular-cookie.min.js"></script>
+
+
+
+
+        <script src="app.js"></script>
+        <script src="controllers/index-controller.js"></script>
+        <script src="factory/databuilder.js"></script>
+        <script src="controllers/startpage-controller.js"></script>
+        <script src="controllers/applicants-controller.js"></script>
+        <script src="controllers/profile-controller.js"></script>
+        <script src="controllers/resume-controller.js"></script>
+        <script src="controllers/skill-controller.js"></script>
+        <script src="controllers/contact-controller.js"></script>
+        <script src="services/sorting.js"></script>
+        <script src="services/change-languages-service.js"></script>
+    
+    </head>
+    <body ng-controller="indexController">
+
+        <header>
+            <nav class="navbar navbar-default navbar-fixed-top">
+                <div class="container-fluid ">
+                    <div class="navbar-header" >
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <br><br><br><br>
+        <div class="container" >
+            <div class="row">
+                <div class="col-md-2 col-lg-2">
+                    <ul class="nav nav-pills nav-stacked profile-menu">
+                        <li class="active"><a href="#" data-target-id="home"><i class="fa fa-home fa-fw"></i>Home</a></li>
+                        <li><img src="image/SteffenJuhlMadsen.png " class="img-circle imgstyle"/></li>
+                        <li><a ui-sref="applicant({id : numbervalue})" ><i class="fa fa-list-alt fa-fw"></i>Profile</a></li>
+                        <li><a ui-sref="resume({id : numbervalue})"><i class="fa fa-list-alt fa-fw"></i>Resume</a></li>
+                        <li><a ui-sref="contact" data-target-id="contact"><i class="fa fa-list-alt fa-fw"></i>Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div ui-view></div>
+            </div>
+        </div>
+
+        <footer>
+            <nav class="navbar navbar-default navbar-fixed-bottom">
+                <div class="container-fluid">
+                    <div>
+
+                    </div>
+                </div>
+            </nav>
+        </footer>
+    </body>
+    <script>
+
+</script>
+</html>
